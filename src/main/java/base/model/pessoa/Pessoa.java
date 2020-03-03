@@ -1,4 +1,4 @@
-package model.pessoa;
+package base.model.pessoa;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

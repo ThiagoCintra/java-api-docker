@@ -1,4 +1,4 @@
-package resource.pessoa;
+package base.resource.pessoa;
 
 import java.net.URI;
 import java.util.List;
@@ -21,21 +21,19 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import model.pessoa.Pessoa;
-import repository.pessoa.PessoaRepository;
-import service.pessoa.PessoaService;
+import base.model.pessoa.Pessoa;
+import base.repository.pessoa.PessoaRepository;
+import base.service.pessoa.PessoaService;
 
-//criando a classe controladora
-//map da url
+
 @RestController
 @RequestMapping("/pessoas")
 public class PessoaResource {
 
-	// repositorio de pessoa
-	@Autowired
+	
+	@Autowired(required=true)
 	private PessoaRepository pessoaRepository;
 
-	// servico
 	@Autowired
 	private PessoaService pessoaService;
 

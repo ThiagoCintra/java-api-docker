@@ -1,4 +1,4 @@
-package service.pessoa;
+package base.service.pessoa;
 
 import java.util.Optional;
 
@@ -8,8 +8,9 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
-import model.pessoa.Pessoa;
-import repository.pessoa.PessoaRepository;
+
+import base.model.pessoa.Pessoa;
+import base.repository.pessoa.PessoaRepository;
 
 @Service
 public class PessoaService {
